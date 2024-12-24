@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%),
+        linear-gradient(180deg, rgba(247, 248, 249, 0) 70.66%, #F7F8F9 100%);
+
+}
+
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Optional styling for RTL elements */
+[dir="rtl"] h2,
+[dir="rtl"] p,
+[dir="rtl"] a {
+    text-align: right;
+    /* Align text to the right */
+}
+
+.grayscale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.grayscale-0 {
+    filter: grayscale(0%);
+}

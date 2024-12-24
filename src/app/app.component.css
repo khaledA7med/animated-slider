@@ -1,0 +1,125 @@
+/* General Styling */
+/* General Thumbnail Styles */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Dark Overlay */
+.bg-black {
+    background-color: black;
+}
+
+.opacity-60 {
+    opacity: 0.6;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.transition-opacity {
+    transition: opacity 1.5s ease-in-out;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    -moz-transition: opacity 1.5s ease-in-out;
+    -ms-transition: opacity 1.5s ease-in-out;
+    -o-transition: opacity 1.5s ease-in-out;
+}
+
+
+/* Fade Animation for Images */
+img {
+    transition: opacity 1.2s ease-in-out;
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -moz-transition: opacity 1.2s ease-in-out;
+    -ms-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+}
+
+/* Up-and-Down Animation for Text */
+div {
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    -webkit-transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    -moz-transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    -ms-transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    -o-transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}
+
+/* Highlight Active Thumbnail */
+.border-dark-300 {
+    border-color: #000;
+}
+
+.hover\:scale-105:hover {
+    transform: scale(3.05);
+    -webkit-transform: scale(3.05);
+    -moz-transform: scale(3.05);
+    -ms-transform: scale(3.05);
+    -o-transform: scale(3.05);
+}
+
+.line {
+    width: 565px;
+    margin: 15px;
+    border: 1px;
+    rotate: 180 deg;
+    border: 1px solid #202020
+}
+
+/* General Text Animations */
+.text-container {
+    position: relative;
+}
+
+.h2-animation {
+    transform: translateY(0px);
+    transition: transform 2.7s ease-in-out;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -webkit-transition: transform 2.7s ease-in-out;
+    -moz-transition: transform 2.7s ease-in-out;
+    -ms-transition: transform 2.7s ease-in-out;
+    -o-transition: transform 2.7s ease-in-out;
+}
+
+.p-animation {
+    transform: translateY(0px);
+    transition: transform 2.7s ease-in-out;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -webkit-transition: transform 2.7s ease-in-out;
+    -moz-transition: transform 2.7s ease-in-out;
+    -ms-transition: transform 2.7s ease-in-out;
+    -o-transition: transform 2.7s ease-in-out;
+}
+
+.text-container .absolute.active .h2-animation {
+    transform: translateY(15px);
+    /* Animate down to align with the line */
+}
+
+.text-container .absolute.active .p-animation {
+    transform: translateY(-15px);
+    /* Animate up to align with the line */
+}
+
+/* Line Styling */
+.line {
+    width: 100%;
+    /* Stretch the line to the container width */
+    margin: 15px auto;
+    height: 2px;
+    background-color: #202020;
+    transform: rotate(180deg);
+}
